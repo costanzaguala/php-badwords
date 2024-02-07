@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>php Badwords</title>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body> 
+        <h1 class="text-center mb-5">
+            Php Badwords
+        </h1>
+        <div class="container d-flex justify-content-center">
+            <form action="./badwords.php" method="GET">
+
+                <div class="d-flex align-items-center mb-3">
+                    <label class="me-3" for="paragraph">Paragrafo:</label>
+                    <textarea name="paragraph" id="paragraph" cols="45" rows="2" placeholder="Inserisci un paragrafo"></textarea>
+                </div>
+
+                <div class="d-flex align-items-center mb-3">
+                    <label class="me-5" for="censuredWord">Parola:</label>
+                    <input type="text" placeholder="Inserisci una parola da censurare" name="censuredWord" id="censuredWord">
+                </div>
+
+                <button type="submit">
+                    Censura
+                </button>
+
+            </form>
+        </div>
+    </body>
+</html>
